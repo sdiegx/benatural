@@ -1,10 +1,27 @@
 import { Outlet } from 'react-router-dom'
 const Layout = () => {
   return (
-    <div className='md:flex md:min-h-screen'>
-      <aside className='md:w-1/4 bg-blue-900 px-5 py-10'>
-        <h2 className='text-4xl font-black text-center text-white'>CRM - Clientes</h2>
-      </aside>
+    <div className='container'>
+      <nav class="navbar fixed-top">
+        <div class="d-flex flex-row justify-content-evenly px-5 w-100" style={{backgroundColor: '#ffa384'}}>
+          <div  >
+            <a className="navbar-brand fs-1" style={{fontFamily: "Reenie Beanie, cursive"}} href="#">be natural</a>
+          </div>
+          <div className='navEffect'>
+            <a className="navbar-brand fw-bold" style={{fontFamily: "Cabin Sketch, cursive"}} href="#">Productos</a>
+          </div>
+          <div className='navEffect'>
+            <a className="navbar-brand fw-bold" style={{fontFamily: "Cabin Sketch, cursive"}} href="#">Fitness</a>
+          </div>
+          <div className='navEffect'>
+            <a className="navbar-brand fw-bold" style={{fontFamily: "Cabin Sketch, cursive"}} href="#">Coaching</a>
+          </div>
+          <div className='navEffect'>
+            <a className="navbar-brand fw-bold" style={{fontFamily: "Cabin Sketch, cursive"}} href="#">Contactos</a>
+          </div>
+          
+        </div>        
+      </nav>
       <main className='md:w-3/4 p-10 md:h-screen overflow-scroll'>
         <Outlet/>
       </main>
